@@ -10,7 +10,8 @@ module.exports = {
   attributes: {
   	id:{
   	  type:'integer',
-  	  primaryKey: true
+  	  primaryKey: true,
+  	  autoIncrement: true
   	},
   	nombres: {
       type: 'string',
@@ -35,10 +36,11 @@ module.exports = {
     },
     username: {
 	    type: 'string',
+	    required:true,
 	    unique: true,
 	    size:50
   	}
-  },
+  }
   
   
 };

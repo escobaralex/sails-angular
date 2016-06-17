@@ -1,3 +1,6 @@
-# app
+# Aplicación demo 
 
-a [Sails](http://sailsjs.org) application
+Usando [Sails](http://sailsjs.org) + AngularJS + MySql
+
+Explorador Rest - Swagger-UI
+http://localhost:1337/docs/
