@@ -34,7 +34,7 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,57 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+'get/groups/:id': {
+        controller: 'GroupController',
+        action: 'test',
+        skipAssets: 'true',
+        //swagger path object
+        swagger: {
+            methods: ['GET', 'POST'],
+            summary: ' Get Groups ',
+            description: 'Get Groups Description',
+            produces: [
+                'application/json'
+            ],
+            tags: [
+                'Groups'
+            ],
+            responses: {
+                '200': {
+                    description: 'List of Groups',
+                    schema: 'Group', // api/model/Group.js,
+                    type: 'array'
+                }
+            },
+            parameters: []
 
+        }
+    },
+    'put/groups/:id': {
+        controller: 'GroupController',
+        action: 'test',
+        skipAssets: 'true',
+        //swagger path object
+        swagger: {
+            methods: ['PUT', 'POST'],
+            summary: 'Update Groups ',
+            description: 'Update Groups Description',
+            produces: [
+                'application/json'
+            ],
+            tags: [
+                'Groups'
+            ],
+            responses: {
+                '200': {
+                    description: 'Updated Group',
+                    schema: 'Group' // api/model/Group.js
+                }
+            },
+            parameters: [
+                'Group' // api/model/Group.js
+            ]
+
+        }
+    }
 };
