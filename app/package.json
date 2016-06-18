@@ -1,5 +1,5 @@
 {
-  "name": "Aplicación Demo",
+  "name": "app_demo",
   "private": false,
   "version": "0.0.1",
   "description": "Una aplicación con Sails + AngularJS + Mysql",
@@ -21,7 +21,10 @@
     "include-all": "~0.1.6",
     "rc": "1.0.1",
     "sails": "~0.12.3",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-mysql": "^0.11.5",
+    "sails-swagger": "^0.5.1",
+    "swagger-ui": "^2.1.4"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -33,5 +36,5 @@
     "url": "git://github.com/escobaralex/sails-angular.git"
   },
   "author": "Alex Escobar - Jorge Guiñez <aescobar@tadis.cl> (http://www.tadis.cl/)",
-  "license":"MIT (http://www.opensource.org/licenses/mit-license.php/)"
+  "license": "MIT"
 }

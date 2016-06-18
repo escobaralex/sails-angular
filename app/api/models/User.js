@@ -13,20 +13,25 @@ module.exports = {
   	  primaryKey: true,
   	  autoIncrement: true
   	},
-  	nombres: {
+  	firstname: {
       type: 'string',
       required:true,
       size:50
     },
-    apellidoPaterno: {
-    	type:'string',
-    	required:true,
-		size:50
+    secondname: {
+      type: 'string',
+      defaultsTo: '',
+      size:50
     },
-    apellidoMaterno:{
+    lastname: {
+      type: 'string',
+      required:true,
+      size:50
+    },
+    secondlastname: {
     	type:'string',
-    	defaultsTo: '',
-    	size:50
+      defaultsTo: '',
+		  size:50
     },
     email:{
     	type:'email',
@@ -39,7 +44,24 @@ module.exports = {
 	    required:true,
 	    unique: true,
 	    size:50
-  	}
+  	},
+    pass: {
+      type: 'string',
+      required:true,
+      size:30
+    },
+    status: {
+      type:'boolean',
+      defaultsTo: true,
+    },
+    phone: {
+      type: 'string',
+      size:30
+    },
+    mobilephone:{
+      type: 'string',
+      size:30
+    }
   }
   
   

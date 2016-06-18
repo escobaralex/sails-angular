@@ -45,6 +45,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+  /* No borrar, necesario para funcionamiento de Swagger  */
 'get/groups/:id': {
         controller: 'GroupController',
         action: 'test',
